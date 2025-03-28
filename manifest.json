@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Homepage Redirect & Back to Top",
+  "version": "1.3",
+  "description": "Redirect to homepage, main domain, or scroll to top.",
+  "permissions": ["tabs", "contextMenus", "scripting"],
+  "host_permissions": ["<all_urls>"], 
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Go to Homepage",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  }
+}
